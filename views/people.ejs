@@ -1,0 +1,22 @@
+<% include partials/header %>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="white-text">
+        <%= data.results[0]%>
+
+        <ul>
+          <% for(var i=0; i<10; i++) {%>
+             <li><%= data.results[i].name %></li>
+          <% } %>
+          </ul>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include partials/footer %>
